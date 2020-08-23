@@ -1,2 +1,13 @@
-# HW2_SoftwareEngineering
-Homework2_SoftwareEngineering
+# HW2 Software Engineering
+Homework2 Software Engineering
+
+Team Members:
+Mangalnathan Vijayagopal (mvijaya2)
+
+Nischal Badarinath Kashyap (nkashya2)
+
+Amogh Rameshappa Devapura (arames22)
+
+Niranjan Pandeshwar (nrpandes)
+
+Sharath Bangalore Ramesh Kumar (sbangal2)
