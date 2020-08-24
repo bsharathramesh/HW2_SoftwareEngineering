@@ -1,3 +1,6 @@
 2020-08-24T01:31:07.529  - Time the Program was Executed - Test Case 1 | Result - Pass
 2020-08-24T01:31:07.83  - Time the Program was Executed - Test Case 2 | Result - Pass
 2020-08-24T01:31:08.655  - Time the Program was Executed - Test Case 3 | Result - Pass
+2020-08-24T17:00:39.138  - Time the Program was Executed - Test Case 1 | Result - Pass
+2020-08-24T17:00:39.296  - Time the Program was Executed - Test Case 2 | Result - Pass
+2020-08-24T17:00:39.302  - Time the Program was Executed - Test Case 3 | Result - Pass
