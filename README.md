@@ -5,15 +5,15 @@
 
 ## Team Members:
 
-### Mangalnathan Vijayagopal (mvijaya2)
+#### Mangalnathan Vijayagopal (mvijaya2)
 
-### Nischal Badarinath Kashyap (nkashya)
+#### Nischal Badarinath Kashyap (nkashya)
 
-### Amogh Rameshappa Devapura (arames22)
+#### Amogh Rameshappa Devapura (arames22)
 
-### Niranjan Pandeshwar (nrpandes)
+#### Niranjan Pandeshwar (nrpandes)
 
-### Sharath Bangalore Ramesh Kumar (sbangal2)
+#### Sharath Bangalore Ramesh Kumar (sbangal2)
 
 ## Rules of the game:
 
