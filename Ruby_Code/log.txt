@@ -49,3 +49,5 @@
 2020-08-24 11:49:53 -0400 - Time the Program was Executed - Test Case 1 | Result - Pass
 2020-08-24 11:49:53 -0400 - Time the Program was Executed - Test Case 2 | Result - Pass
 2020-08-24 11:49:53 -0400 - Time the Program was Executed - Test Case 3 | Result - Pass
+2020-08-24 12:05:26 -0400 - Time the Program was Executed - Test Case 1 | Result - Test Case Number 1 has passed
+2020-08-24 12:05:26 -0400 - Time the Program was Executed - Test Case 100 | Result - Your Test Case Number 2 has failed!! The base Test Case has to pass in order for the program to run the backend cases
