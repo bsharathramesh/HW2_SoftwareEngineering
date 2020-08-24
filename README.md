@@ -24,7 +24,11 @@ Sharath Bangalore Ramesh Kumar (sbangal2)
 # Languages Used
 
 1.) Ruby
+
+
 2.) Swift
+
+
 3.) Julia
 
 # Pre requisites Required 
