@@ -42,12 +42,12 @@ https://docs.google.com/forms/d/e/1FAIpQLScrQhfX3kqmytBmOxWYL9FlraeTvPFnBz_PGsqD
 ## Pre requisites Required 
 
 ### Ruby
-1) Ruby execution Environment has to be setup
+1) Ruby execution Environment has to be setup by executing `sudo apt install ruby-full`
 2) Python3 execution Environment has to be setup
 3) Git Module has to imported/installed on the system
-4) Check for ruby version using the command **ruby --version**
-5) Check for python3 version using the command **python3 --version**
-6) Check for git version using the command **git --version**
+4) Check for ruby version using the command `ruby --version`
+5) Check for python3 version using the command `python3 --version`
+6) Check for git version using the command `git --version`
 
 
 7) The bugs are introduced in the **game_of_life2** function.
@@ -55,7 +55,7 @@ https://docs.google.com/forms/d/e/1FAIpQLScrQhfX3kqmytBmOxWYL9FlraeTvPFnBz_PGsqD
 
 8) The developer has to find the bugs and debug them.
 9) Create an empty log file **log.txt** in the same directory where **execute.py** and **bug_fix_ruby.rb** is present if it does not exist.(Do this if the file is not present and you get error regarding this)
-10) There is no need to run the ruby file individually. The developer has to correct the program and run the python file **execute.py** using the command **$python3 execute.py**
+10) There is no need to run the ruby file individually. The developer has to correct the program and run the python file **execute.py** using the command `python3 execute.py`
    
 11) In log.txt file in line number 8 where file_list is defined, please enter the **absolute path** of the address of log.txt file.
 
@@ -71,29 +71,29 @@ https://docs.google.com/forms/d/e/1FAIpQLScrQhfX3kqmytBmOxWYL9FlraeTvPFnBz_PGsqD
 
 The steps for setup are as follows:
 
-a) sudo apt-get install clang
+a) `sudo apt-get install clang`
 
-b) sudo apt-get install libcurl4 libpython2.7 libpython2.7-dev
+b) `sudo apt-get install libcurl4 libpython2.7 libpython2.7-dev`
 
-c) wget https://swift.org/builds/swift-5.0-release/ubuntu1804/swift-5.0-RELEASE/swift-5.0-RELEASE-ubuntu18.04.tar.gz
+c) `wget https://swift.org/builds/swift-5.0-release/ubuntu1804/swift-5.0-RELEASE/swift-5.0-RELEASE-ubuntu18.04.tar.gz`
 
-d) tar xzf swift-5.0-RELEASE-ubuntu18.04.tar.gz
+d) `tar xzf swift-5.0-RELEASE-ubuntu18.04.tar.gz`
 
-e) sudo mv swift-5.0-RELEASE-ubuntu18.04 /usr/share/swift
+e) `sudo mv swift-5.0-RELEASE-ubuntu18.04 /usr/share/swift`
 
-f) echo "export PATH=/usr/share/swift/usr/bin:$PATH" >> ~/.bashrc
+f) `echo "export PATH=/usr/share/swift/usr/bin:$PATH" >> ~/.bashrc`
 
-g) source  ~/.bashrc
+g) `source  ~/.bashrc`
 
-Check fot swift version using the command **swift --version**
+Check for swift version using the command `swift --version`
 
 2) Git Module has to imported/installed on the system
 
 3) The developer has to find the bugs and debug them
 
-4) Swift program can be compiled by the command **swiftc -o <output_file_name> <swift_file>**
+4) Swift program can be compiled by the command `swiftc -o <output_file_name> <swift_file>`
 
-5) Then, the compiled file can be executed by **./<output_file_name>**
+5) Then, the compiled file can be executed by `./<output_file_name>`
 
 6) There are three test cases introduced of which all have to be passed in order for the program to successfully compile
 
