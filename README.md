@@ -127,3 +127,23 @@ Check fot swift version using the command **swift --version**
 7) The fourth major parameter would be the number of test cases passed. It is important that all test cases pass in order to get higher performance rating
 
 8) Please remember that this is solely for our analysis and should not be taken otherwise
+
+## Performanve Formula
+
+**PF = 0.1(P+E) + 0.1(C+L) + (T*10)/((N/10)+(D/60))**
+where
+
+P -> No of Professional Experience in Years
+
+E -> No of Experience in the particular language in Years
+
+C -> Affinity towards Coding
+
+L -> Affinity towards Logical Thinking and Problem Solving
+
+T -> Number of Test Cases Passed
+
+N -> Number of times the program was compiled
+
+D -> Debugging time. If the task is failed, D = 30
+
