@@ -61,3 +61,47 @@ https://docs.google.com/forms/d/e/1FAIpQLScrQhfX3kqmytBmOxWYL9FlraeTvPFnBz_PGsqD
 11) The program may or may not contain syntax errors.
 12) Every time the program is executed, time will be logged on the log.txt file.
 13) The log.txt file is automatically updated on the github in the developer's branch each time the program is compiled.
+
+## Swift
+1) Swift execution environment has to be set up as shown here https://medium.com/@gigmuster/install-swift-5-0-on-ubuntu-18-04-86f6b96654
+
+The steps for setup are as follows:
+
+a) sudo apt-get install clang
+
+b) sudo apt-get install libcurl4 libpython2.7 libpython2.7-dev
+
+c) wget https://swift.org/builds/swift-5.0-release/ubuntu1804/swift-5.0-RELEASE/swift-5.0-RELEASE-ubuntu18.04.tar.gz
+
+d) tar xzf swift-5.0-RELEASE-ubuntu18.04.tar.gz
+
+e) sudo mv swift-5.0-RELEASE-ubuntu18.04 /usr/share/swift
+
+f) echo "export PATH=/usr/share/swift/usr/bin:$PATH" >> ~/.bashrc
+
+g) source  ~/.bashrc
+
+Check fot swift version using the command **swift --version**
+
+2) Git Module has to imported/installed on the system
+
+3) The developer has to find the bugs and debug them
+
+4) Swift program can be compiled by the command **swiftc -o <output_file_name> <swift_file>**
+
+5) Then, the compiled file can be executed by **./<output_file_name>**
+
+6) There are three test cases introduced of which all have to be passed in order for the program to successfully compile
+
+
+7) The base test case has to be passed in order further move on to Test Case 2 and Test Case 3
+
+
+8) The program may or may not contain syntax errors.
+
+
+9) Every time the program is executed, time will be logged on the log.txt file.
+
+
+10) The log.txt file is automatically updated on the github in the developer's branch each time the program is compiled.
+
