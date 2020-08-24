@@ -35,6 +35,8 @@ Sharath Bangalore Ramesh Kumar (sbangal2)
 3) Git Module has to imported/installed on the system
 
 1) The bugs are introduced in the bug_fix_ruby.rb especially in the function game_of_life2.
+
+
 2) The developer has to find the bugs and debug them.
 3) There is no need to run the ruby file individually. The developer has to correct the program and run the python file execute.py using python3.
    $python3 execute.py
