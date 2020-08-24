@@ -1,5 +1,4 @@
 # HW2 Software Engineering : Game of Life Implementation
-Homework2 Software Engineering
 
 Zenodo DOI Badge
 [![DOI](https://zenodo.org/badge/289782467.svg)](https://zenodo.org/badge/latestdoi/289782467)
