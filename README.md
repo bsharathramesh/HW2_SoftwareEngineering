@@ -59,7 +59,10 @@ https://docs.google.com/forms/d/e/1FAIpQLScrQhfX3kqmytBmOxWYL9FlraeTvPFnBz_PGsqD
    
    
    $python3 execute.py
+   
 11) In log.txt file in line number 8 where file_list is defined, please enter the **absolute path** of the address of log.txt file.
+
+
 12) There are three test cases introduced of which all have to be passed in order for the program to successfully compile.
 13) The base test case has to be passed in order further move on to Test Case 2 and Test Case 3
 14) The program may or may not contain syntax errors.
@@ -109,3 +112,19 @@ Check fot swift version using the command **swift --version**
 
 10) The log.txt file is automatically updated on the github in the developer's branch each time the program is compiled.
 
+
+## Metric Evaluation of the Developers
+
+1) Every Developer's performance is analysed with respect to three major parameters
+
+2) The first major parameter is with respect to the debugging time taken by the developer to complete the given task.
+
+3) Here the task is considered to be completed if all the three test cases provided are passed successfully.
+
+4) We request the developers to not run the program again if successfully completed.
+
+5) The second parameter would be the Number of times the developer has compiled the code. The lesser the better.
+
+6) The third parameter would be with respect to the responses given in the google forms
+
+7) Please remember that this is solely for our analysis and should not be taken otherwise
