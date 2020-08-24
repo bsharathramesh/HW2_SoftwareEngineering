@@ -1,7 +1,8 @@
-# Operating System.
+# Opeating System
 Ubuntu 16.04 or higher
 
-# Softwares
+## Softwares
+
 Julia >= 1.2.0
 Installation Procedure for Ubuntu : https://ferrolho.github.io/blog/2019-01-26/how-to-install-julia-on-ubuntu
 
