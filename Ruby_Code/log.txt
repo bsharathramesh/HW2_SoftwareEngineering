@@ -2,3 +2,6 @@
 2020-08-23 23:01:29 -0400 - Time the Program was Executed - Test Case 1 | Result - Fail
 2020-08-23 23:01:29 -0400 - Time the Program was Executed - Test Case 2 | Result - Fail
 2020-08-23 23:01:29 -0400 - Time the Program was Executed - Test Case 3 | Result - Fail
+2020-08-23 23:02:03 -0400 - Time the Program was Executed - Test Case 1 | Result - Pass
+2020-08-23 23:02:03 -0400 - Time the Program was Executed - Test Case 2 | Result - Pass
+2020-08-23 23:02:03 -0400 - Time the Program was Executed - Test Case 3 | Result - Pass
