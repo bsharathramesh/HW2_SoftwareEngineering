@@ -1,7 +1,5 @@
-
 import Dates
 # Conway's Game of Life
-include("./HW2_Julia_G19.jl")
 using Distributions
 row = 10
 col = 10
