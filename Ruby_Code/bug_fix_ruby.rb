@@ -155,30 +155,55 @@ def game_of_life2(rows,columns,grid,generations)
             puts ""
         end
     end
-    return future[-1]
+    return future
 end
 
 
 Test = 1
 rows = 3
 columns = 3
-while rows<=5
-    generations = 25
-    population_percentage = 0.437
-    
-    #Assign Randomly to Grid
-    grid = Array.new(rows){Array.new(columns)}
-    #grid = [[0,0,0,0,0],[0,0,0,0,0], [0,1,1,1,0], [0,0,0,0,0], [0,0,0,0,0] ]
-    for i in 0..rows-1
-        for j in 0..columns-1
-            value = rand()<population_percentage
-            if value
-                grid[i][j] = 0
-            else
-                grid[i][j] = 1
-            end
-        end
+
+input1 = [[1,0,1,0],[1,0,0,0],[1,1,0,0],[0,0,0,1]]
+output1 = [[1, 0, 0, 0], [1, 0, 0, 0], [1, 0, 0, 1], [1, 1, 0, 0]]
+generation1 = 5
+
+input2 = [[1,0,1,0,0,0,0,1,0,0],[0,0,1,1,0,0,0,1,0,1],[1,1,1,0,0,0,0,0,0,0],[0,0,1,0,0,0,0,1,0,1],[0,0,1,0,1,1,0,0,0,0],[0,0,0,0,0,1,0,1,1,0],[0,0,0,0,0,1,0,1,0,0],[0,0,1,1,0,1,0,0,0,0],[1,0,0,0,0,0,0,0,0,0],[0,1,1,1,0,0,0,0,1,0]]
+output2 = [[1, 1, 0, 1, 1, 1, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 0, 0, 1, 0, 1, 0], [0, 1, 0, 0, 0, 0, 1, 0, 1, 0], [1, 0, 1, 1, 1, 0, 0, 0, 1, 0], [0, 0, 1, 0, 1, 0, 1, 0, 1, 1], [0, 0, 1, 0, 1, 0, 0, 0, 1, 0], [1, 0, 1, 0, 1, 0, 1, 0, 0, 1], [1, 1, 1, 0, 1, 0, 0, 0, 1, 0], [0, 0, 0, 0, 0, 0, 1, 1, 1, 0]]
+generation2 = 15
+
+input3 = [[1,1,1,0,1,0,0,1,0],[0,0,0,0,1,0,0,0,1],[1,0,1,0,0,0,1,0,0],[0,0,1,0,1,0,0,1,0],[0,1,1,0,1,0,0,0,0],[0,0,1,0,1,0,0,0,1]]
+output3 = [[0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 1, 1, 0, 0, 1, 1, 0], [0, 0, 1, 1, 0, 0, 1, 1, 0]]
+generation3 = 7
+
+while Test<4
+    if Test == 1
+        grid = input1
+        output = output1
+        generations = generation1
     end
+    if Test == 2
+        grid = input2
+        output = output2
+        generations = generation2
+    end
+    if Test == 3
+        grid = input3
+        output = output3
+        generations = generation3
+    end
+    #Assign Randomly to Grid
+    #grid = Array.new(rows){Array.new(columns)}
+    #grid = [[0,0,0,0,0],[0,0,0,0,0], [0,1,1,1,0], [0,0,0,0,0], [0,0,0,0,0] ]
+#     for i in 0..rows-1
+#         for j in 0..columns-1
+#             value = rand()<population_percentage
+#             if value
+#                 grid[i][j] = 0
+#             else
+#                 grid[i][j] = 1
+#             end
+#         end
+#     end
 
     #Alternate Assignment in grid ( For Testing )
 
@@ -192,23 +217,21 @@ while rows<=5
     # end
     
     #Display Initial Grid
-    for i in 0..rows-1
-        for j in 0..columns-1
-            if grid[i][j]==1
-                print "@ "
-            else
-                print ". "
-            end
-        end
-        puts ""
-    end
+#     for i in 0..rows-1
+#         for j in 0..columns-1
+#             if grid[i][j]==1
+#                 print "@ "
+#             else
+#                 print ". "
+#             end
+#         end
+#         puts ""
+#     end
 
 
     alpha = game_of_life2 rows,columns,grid,generations
-    beta = game_of_life rows,columns,grid,generations
-
-    puts "Rows = #{rows}"
-    if alpha == beta
+    puts "Output is #{alpha}"
+    if alpha == output
     result = "Pass"
     puts "#{result}"
     else
