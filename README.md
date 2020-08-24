@@ -18,8 +18,11 @@ Sharath Bangalore Ramesh Kumar (sbangal2)
 # Rules of the game:
 
 1.) Any live cell with two or three live neighbours survives.
+
 2.) Any dead cell with three live neighbours becomes a live cell.
+
 3.) All other live cells die in the next generation. Similarly, all other dead cells stay dead.
+
 
 # Languages Used
 
@@ -43,6 +46,8 @@ Sharath Bangalore Ramesh Kumar (sbangal2)
 
 2) The developer has to find the bugs and debug them.
 3) There is no need to run the ruby file individually. The developer has to correct the program and run the python file execute.py using python3.
+   
+   
    $python3 execute.py
 4) There are three test cases introduced of which all have to be passed in order for the program to successfully compile.
 5) The base test case has to be passed in order further move on to Test Case 2 and Test Case 3
