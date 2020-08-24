@@ -1,5 +1,5 @@
 #Conway's Game of Life
-#Implemented by Nischal Kashyap: nkashya2
+#Implemented by Nischal Kashyap: nkashya
 
 #Simulate Game of Life for given number of Generations
 def game_of_life(rows,columns,grid,generations)
