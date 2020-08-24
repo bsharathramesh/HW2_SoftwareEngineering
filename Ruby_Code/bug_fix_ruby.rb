@@ -216,7 +216,7 @@ while rows<=5
     puts "#{result}"
     end
 
-    File.open("log.txt", "w") { |f| f.write "#{Time.now} - Time the Program was Executed - Test Case #{Test} | Result - #{result}\n"}
+    File.open("log.txt", "a") { |f| f.write "#{Time.now} - Time the Program was Executed - Test Case #{Test} | Result - #{result}\n"}
     Test += 1
     rows += 1
     columns += 1
