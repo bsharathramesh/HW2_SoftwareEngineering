@@ -1,3 +1,3 @@
-Julia-Test Failed:2020-08-23T21:44:16.003
-Julia-Test Failed:2020-08-23T21:44:16.119
-Julia-Test Failed:2020-08-23T21:44:16.187
+2020-08-24T01:31:07.529  - Time the Program was Executed - Test Case 1 | Result - Pass
+2020-08-24T01:31:07.83  - Time the Program was Executed - Test Case 2 | Result - Pass
+2020-08-24T01:31:08.655  - Time the Program was Executed - Test Case 3 | Result - Pass

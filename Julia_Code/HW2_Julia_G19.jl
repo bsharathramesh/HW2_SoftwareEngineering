@@ -1,10 +1,11 @@
 
+import Dates
 # Conway's Game of Life
-
+include("./HW2_Julia_G19.jl")
 using Distributions
-row = 5
-col = 6
-generations = 5
+row = 10
+col = 10
+generations = 15
 pop_percent = 0.619
 
 function generate_input()
@@ -19,12 +20,14 @@ function generate_input()
             end
         end
     end
+    println(grid)
+    println("####################################")
     return grid
 end
-            
+       
 
 # Display the new generation
-function output(row,col,future)
+function output_test(row,col,future)
     for i in 1:row
         y=""
         for j in 1:col
@@ -39,8 +42,9 @@ function output(row,col,future)
 end
 
 # Simulate Game of Life for given number of Generations
-function game_of_life(grid)
+function game_of_life_test(grid)
     future = deepcopy(grid)
+    temp = deepcopy(grid)
     r,c = size(future)
     
     for x in 1:generations
@@ -155,33 +159,69 @@ function game_of_life(grid)
                             q = j + b
                         end
                         
-                        alive_neighbors+=future[p,q]
+                        alive_neighbors+=temp[p,q]
                     end
                 end
                 
                 # Current cell to be subtracted to avoid duplicates
-                alive_neighbors-=future[i,j]
+                alive_neighbors-=temp[i,j]
                 
                 # Lonely Cell dies
-                if future[i,j]==1 && alive_neighbors<2
+                if temp[i,j]==1 && alive_neighbors<2
                     future[i,j]=0
                 
                 # Cell dies due to overcrowding
-                elseif future[i,j]==1 && alive_neighbors>3
+                elseif temp[i,j]==1 && alive_neighbors>3
                     future[i,j]=0
                 
                 # A new cell is born if there are 3 neighbors
-                elseif future[i,j]==0 && alive_neighbors==3
+                elseif temp[i,j]==0 && alive_neighbors==3
                     future[i,j]=1
                 
                 end
             end
         end
+        temp = deepcopy(future)
+        output_test(r,c,future)
     end
-    output(r,c,future)
     return future
 end
 
+function runtest(inp,out,num)
+    test_out = game_of_life_test(inp)
+    #orig_out = game_of_life(inp)
+    println("*************************")
+    println(test_out)
+    println("*************************")
+    #println(orig_out)
+    #println("*************************")
+    
+    if test_out == out
+        open("log.txt","a") do io
+            println(io,Dates.now(), "  - Time the Program was Executed - Test Case ",num," | Result - Pass")
+        end
+    else
+        open("log.txt","a") do io
+            println(io,Dates.now(), "  - Time the Program was Executed - Test Case ",num," | Result - Fail")
+        end
+    end
+end
+
+#runtest(generate_input())
+#runtest(generate_input())
+#runtest(generate_input())
+
+Input1 = [0 0 0 0 0; 0 0 1 0 0; 0 0 1 0 0; 0 0 1 0 0; 0 0 0 0 0]
+Input2 = [0 0 0 0 0 0; 0 0 0 1 0 0; 0 1 0 1 0 0; 0 0 1 1 0 0; 0 0 0 0 0 0]
+Input3 = [0 0 0 0 0 0; 0 1 1 0 0 0; 0 1 0 0 0 0; 0 0 0 0 1 0; 0 0 0 1 1 0; 0 0 0 0 0 0]
+
+Output1 = [0 0 0 0 0; 0 0 0 0 0; 0 1 1 1 0; 0 0 0 0 0; 0 0 0 0 0]
+Output2 = [0 1 0 0 0 1; 1 1 0 0 0 0; 1 0 0 0 0 0; 0 0 0 0 0 0; 0 0 0 0 0 0]
+Output3 = [0 0 0 0 0 0; 0 1 1 0 0 0; 0 1 1 0 0 0; 0 0 0 1 1 0; 0 0 0 1 1 0; 0 0 0 0 0 0]
+
+runtest(Input1, Output1,1)
+runtest(Input2, Output2,2)
+runtest(Input3, Output3,3)
 
 
 
