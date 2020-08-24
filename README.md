@@ -90,25 +90,25 @@ Swift execution environment has to be set up as shown here https://medium.com/@g
 The steps for setup are as follows:
 
 
-  a) `sudo apt-get install clang`
+    a) `sudo apt-get install clang`
 
 
-  b) `sudo apt-get install libcurl4 libpython2.7 libpython2.7-dev`
+    b) `sudo apt-get install libcurl4 libpython2.7 libpython2.7-dev`
 
 
-  c) `wget https://swift.org/builds/swift-5.0-release/ubuntu1804/swift-5.0-RELEASE/swift-5.0-RELEASE-ubuntu18.04.tar.gz`
+    c) `wget https://swift.org/builds/swift-5.0-release/ubuntu1804/swift-5.0-RELEASE/swift-5.0-RELEASE-ubuntu18.04.tar.gz`
 
 
-  d) `tar xzf swift-5.0-RELEASE-ubuntu18.04.tar.gz`
+    d) `tar xzf swift-5.0-RELEASE-ubuntu18.04.tar.gz`
 
 
-  e) `sudo mv swift-5.0-RELEASE-ubuntu18.04 /usr/share/swift`
+    e) `sudo mv swift-5.0-RELEASE-ubuntu18.04 /usr/share/swift`
 
 
-  f) `echo "export PATH=/usr/share/swift/usr/bin:$PATH" >> ~/.bashrc`
+    f) `echo "export PATH=/usr/share/swift/usr/bin:$PATH" >> ~/.bashrc`
 
 
-  g) `source  ~/.bashrc`
+    g) `source  ~/.bashrc`
 
 
 Check for swift version using the command `swift --version`
@@ -122,25 +122,25 @@ Check for swift version using the command `swift --version`
 2.) The steps to be followed are as shown below:
 
 
-  a) `wget https://julialang-s3.julialang.org/bin/linux/x64/1.5/julia-1.5.0-linux-x86_64.tar.gz`
+    a) `wget https://julialang-s3.julialang.org/bin/linux/x64/1.5/julia-1.5.0-linux-x86_64.tar.gz`
 
 
-  b) `tar -xvzf julia-1.5.0-linux-x86_64.tar.gz`
+    b) `tar -xvzf julia-1.5.0-linux-x86_64.tar.gz`
 
 
-  c) `sudo cp -r julia-1.5.0 /opt/`
+    c) `sudo cp -r julia-1.5.0 /opt/`
 
 
-  d) `sudo ln -s /opt/julia-1.5.0/bin/julia /usr/local/bin/julia`
+    d) `sudo ln -s /opt/julia-1.5.0/bin/julia /usr/local/bin/julia`
 
 
-  e) `julia`
+    e) `julia`
 
 
-  f) `import Pkg; Pkg.add("Distributions")`
+    f) `import Pkg; Pkg.add("Distributions")`
 
 
-  g) `exit()`
+    g) `exit()`
 
 
 ### Post-installation
