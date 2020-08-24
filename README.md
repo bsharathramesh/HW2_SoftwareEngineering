@@ -45,9 +45,9 @@ https://docs.google.com/forms/d/e/1FAIpQLScrQhfX3kqmytBmOxWYL9FlraeTvPFnBz_PGsqD
 1) Ruby execution Environment has to be setup
 2) Python3 execution Environment has to be setup
 3) Git Module has to imported/installed on the system
-4) Check fot swift version using the command **ruby --version**
-5) Check fot swift version using the command **python3 --version**
-6) Check fot swift version using the command **git --version**
+4) Check fot ruby version using the command **ruby --version**
+5) Check fot python3 version using the command **python3 --version**
+6) Check fot git version using the command **git --version**
 
 
 7) The bugs are introduced in the **game_of_life2** function.
