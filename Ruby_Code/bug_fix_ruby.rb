@@ -1,17 +1,20 @@
 #Conway's Game of Life
 #Implemented by Nischal Kashyap: nkashya2
 
-load "original.rb"
+# load "original.rb"
 
 #Simulate Game of Life for given number of Generations
 def game_of_life2(rows,columns,grid,generations)
-    future = grid
+    puts "#{grid}"
+    temp2 = Marshal.dump(grid)
+    temp = Marshal.load(temp2)
+    future = Marshal.load(temp2)
     for x in 1..generations
         puts "Generation #{x}"
 
         #Loop through each cell
-        for i in 0..future.length-1
-            for j in 0..future[i].length-1
+        for i in 0..temp.length-1
+            for j in 0..temp[i].length-1
                 alive_neighbours = 0
 
                 #Finding number of neighbours for current cell
@@ -23,11 +26,11 @@ def game_of_life2(rows,columns,grid,generations)
                         y = 0
 
                         #Current number of rows and columns
-                        nx = future.length-1
-                        ny = future[i].length-1
+                        nx = temp.length-1
+                        ny = temp[i].length-1
 
                         #Corner Cases including cyclic neighbors
-                        
+
                         #Top Left Corner
                         if i==0 and j==0
                             if i+a<0 and j+b<0
@@ -119,25 +122,25 @@ def game_of_life2(rows,columns,grid,generations)
                             x = i+a
                             y = j+b
                         end
-                        alive_neighbours = alive_neighbours + future[x][y]
+                        alive_neighbours = alive_neighbours + temp[x][y]
                     end
                 end
 
                 #Current cell to be subtracted to avoid duplicates
-                alive_neighbours = alive_neighbours-future[i][j]
+                alive_neighbours = alive_neighbours- temp[i][j]
 
                 #Implenting rules of GOF
-                
+
                 #Lonely Cell dies
-                if future[i][j]==1 and alive_neighbours<2
+                if temp[i][j]==1 and alive_neighbours<2
                     future[i][j] = 0
 
                 #Cell dies due to overcrowding
-                elsif future[i][j]==1 and alive_neighbours>3
+                elsif temp[i][j]==1 and alive_neighbours>3
                     future[i][j] = 0
 
                 #A new cell is born if there are 3 neighbors
-                elsif future[i][j]==0 and alive_neighbours==3
+                elsif temp[i][j]==0 and alive_neighbours==3
                     future[i][j] = 1
                 end
             end
@@ -154,6 +157,8 @@ def game_of_life2(rows,columns,grid,generations)
             end
             puts ""
         end
+	temp3 = Marshal.dump(future)
+	temp = Marshal.load(temp3)
     end
     return future
 end
@@ -163,34 +168,35 @@ Test = 1
 rows = 3
 columns = 3
 
-input1 = [[1,0,1,0],[1,0,0,0],[1,1,0,0],[0,0,0,1]]
-output1 = [[1, 0, 0, 0], [1, 0, 0, 0], [1, 0, 0, 1], [1, 1, 0, 0]]
+input1 = [[0,0,0,0,0,0],[0,0,1,1,0,0],[0,1,0,0,1,0],[0,0,1,1,0,0], [0,0,0,0,0,0]]
+output1 = [[0,0,0,0,0,0],[0,0,1,1,0,0],[0,1,0,0,1,0],[0,0,1,1,0,0], [0,0,0,0,0,0]]
 generation1 = 5
 
-input2 = [[1,0,1,0,0,0,0,1,0,0],[0,0,1,1,0,0,0,1,0,1],[1,1,1,0,0,0,0,0,0,0],[0,0,1,0,0,0,0,1,0,1],[0,0,1,0,1,1,0,0,0,0],[0,0,0,0,0,1,0,1,1,0],[0,0,0,0,0,1,0,1,0,0],[0,0,1,1,0,1,0,0,0,0],[1,0,0,0,0,0,0,0,0,0],[0,1,1,1,0,0,0,0,1,0]]
-output2 = [[1, 1, 0, 1, 1, 1, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0, 0, 1, 0, 0], [0, 0, 0, 0, 0, 0, 1, 0, 1, 0], [0, 1, 0, 0, 0, 0, 1, 0, 1, 0], [1, 0, 1, 1, 1, 0, 0, 0, 1, 0], [0, 0, 1, 0, 1, 0, 1, 0, 1, 1], [0, 0, 1, 0, 1, 0, 0, 0, 1, 0], [1, 0, 1, 0, 1, 0, 1, 0, 0, 1], [1, 1, 1, 0, 1, 0, 0, 0, 1, 0], [0, 0, 0, 0, 0, 0, 1, 1, 1, 0]]
+input2 = [[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,1,0,0,0,0,0],[0,0,0,0,0,1,0,0,0,0,0],[0,0,0,0,1,0,1,0,0,0,0],[0,0,0,0,0,1,0,0,0,0,0],[0,0,0,0,0,1,0,0,0,0,0],[0,0,0,0,0,1,0,0,0,0,0],[0,0,0,0,0,1,0,0,0,0,0],[0,0,0,0,1,0,1,0,0,0,0],[0,0,0,0,0,1,0,0,0,0,0],[0,0,0,0,0,1,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0,0,0]]
+output2 = [[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0], [0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0], [0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]
 generation2 = 15
 
-input3 = [[1,1,1,0,1,0,0,1,0],[0,0,0,0,1,0,0,0,1],[1,0,1,0,0,0,1,0,0],[0,0,1,0,1,0,0,1,0],[0,1,1,0,1,0,0,0,0],[0,0,1,0,1,0,0,0,1]]
-output3 = [[0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 1, 1, 0, 0, 1, 1, 0], [0, 0, 1, 1, 0, 0, 1, 1, 0]]
-generation3 = 7
+input3 = [[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,1,1,0,0,0],[0,0,1,1,0,1,1,0,0],[0,0,1,1,1,1,0,0,0],[0,0,0,1,1,0,0,0,0],[0,0,0,0,0,0,0,0,0]]
+output3 = [[0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 1, 0, 0, 0, 0, 0, 1, 0], [0, 0, 1, 0, 0, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0, 0, 1, 0], [1, 1, 1, 0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0]]
+generation3 = 11
 
-while Test<4
+flag = 1
+while Test < 4
     if Test == 1
         grid = input1
         output = output1
         generations = generation1
     end
-    if Test == 2
-        grid = input2
-        output = output2
-        generations = generation2
-    end
-    if Test == 3
-        grid = input3
-        output = output3
-        generations = generation3
-    end
+   if Test == 2
+       grid = input2
+       output = output2
+       generations = generation2
+   end
+   if Test == 3
+       grid = input3
+       output = output3
+       generations = generation3
+   end
     #Assign Randomly to Grid
     #grid = Array.new(rows){Array.new(columns)}
     #grid = [[0,0,0,0,0],[0,0,0,0,0], [0,1,1,1,0], [0,0,0,0,0], [0,0,0,0,0] ]
@@ -215,7 +221,7 @@ while Test<4
     #         element = 1-element
     #     end
     # end
-    
+
     #Display Initial Grid
 #     for i in 0..rows-1
 #         for j in 0..columns-1
@@ -232,15 +238,20 @@ while Test<4
     alpha = game_of_life2 rows,columns,grid,generations
     puts "Output is #{alpha}"
     if alpha == output
-    result = "Pass"
-    puts "#{result}"
+    result = "Test Case Number #{Test} has passed"
     else
-    result = "Fail"
-    puts "#{result}"
+    result = "Your Test Case Number #{Test} has failed!! The base Test Case has to pass in order for the program to run the backend cases"
+    Test = 100
+    flag = 0
     end
+    puts "#{result}"
 
     File.open("log.txt", "a") { |f| f.write "#{Time.now} - Time the Program was Executed - Test Case #{Test} | Result - #{result}\n"}
     Test += 1
     rows += 1
     columns += 1
+end
+
+if flag==1
+puts "All the test cases have passed!! The program has been successfully Debugged!!"
 end
