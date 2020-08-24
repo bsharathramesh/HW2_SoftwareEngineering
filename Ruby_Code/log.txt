@@ -134,3 +134,8 @@ The output for the program is as follows
 2020-08-24 14:53:07 -0400 - Time the Program was Executed - Test Case 3 | Result - Test Case Number 3 has passed
 The output for the program is as follows 
  [[0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 1, 0, 0, 0, 0, 0, 1, 0], [0, 0, 1, 0, 0, 0, 0, 0, 0], [0, 0, 1, 0, 0, 0, 0, 1, 0], [1, 1, 1, 0, 0, 0, 0, 0, 1], [0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0]] 
+
+2020-08-24 14:54:29 -0400 - Time the Program was Started
+2020-08-24 14:54:29 -0400 - Time the Program was Executed - Test Case 100 | Result - Your Test Case Number 1 has failed!! The base Test Case has to pass in order for the program to run the backend cases
+The output for the program is as follows 
+ [[0, 0, 0, 0, 0, 0], [0, 0, 1, 1, 0, 0], [0, 1, 0, 0, 1, 0], [0, 0, 1, 1, 0, 0], [0, 0, 0, 0, 0, 0]] 
