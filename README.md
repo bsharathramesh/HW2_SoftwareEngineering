@@ -1,18 +1,19 @@
 # HW2 Software Engineering : Game of Life Implementation
 
-Zenodo DOI Badge
+# Zenodo DOI Badge
 [![DOI](https://zenodo.org/badge/289782467.svg)](https://zenodo.org/badge/latestdoi/289782467)
 
-Team Members:
-Mangalnathan Vijayagopal (mvijaya2)
+# Team Members:
 
-Nischal Badarinath Kashyap (nkashya)
+## Mangalnathan Vijayagopal (mvijaya2)
 
-Amogh Rameshappa Devapura (arames22)
+## Nischal Badarinath Kashyap (nkashya)
 
-Niranjan Pandeshwar (nrpandes)
+## Amogh Rameshappa Devapura (arames22)
 
-Sharath Bangalore Ramesh Kumar (sbangal2)
+## Niranjan Pandeshwar (nrpandes)
+
+## Sharath Bangalore Ramesh Kumar (sbangal2)
 
 # Rules of the game:
 
