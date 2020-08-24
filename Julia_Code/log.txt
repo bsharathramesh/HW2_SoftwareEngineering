@@ -1,3 +1,39 @@
 2020-08-24T01:31:07.529  - Time the Program was Executed - Test Case 1 | Result - Pass
 2020-08-24T01:31:07.83  - Time the Program was Executed - Test Case 2 | Result - Pass
 2020-08-24T01:31:08.655  - Time the Program was Executed - Test Case 3 | Result - Pass
+2020-08-24T17:00:39.138  - Time the Program was Executed - Test Case 1 | Result - Pass
+2020-08-24T17:00:39.296  - Time the Program was Executed - Test Case 2 | Result - Pass
+2020-08-24T17:00:39.302  - Time the Program was Executed - Test Case 3 | Result - Pass
+2020-08-24T17:25:32.07  - Time the Program was Executed - Test Case 1 | Result - Pass
+2020-08-24T17:25:32.214  - Time the Program was Executed - Test Case 2 | Result - Pass
+2020-08-24T17:25:32.22  - Time the Program was Executed - Test Case 3 | Result - Pass
+2020-08-24T17:33:49.05  - Time the Program was Executed - Test Case 1 | Result - Fail
+2020-08-24T17:33:49.201  - Time the Program was Executed - Test Case 2 | Result - Fail
+2020-08-24T17:33:49.207  - Time the Program was Executed - Test Case 3 | Result - Fail
+2020-08-24T17:36:43.202  - Time the Program was Executed - Test Case 1 | Result - Fail
+2020-08-24T17:36:43.353  - Time the Program was Executed - Test Case 2 | Result - Fail
+2020-08-24T17:36:43.359  - Time the Program was Executed - Test Case 3 | Result - Fail
+2020-08-24T17:37:56.77  - Time the Program was Executed - Test Case 1 | Result - Fail
+2020-08-24T17:37:56.923  - Time the Program was Executed - Test Case 2 | Result - Fail
+2020-08-24T17:37:56.928  - Time the Program was Executed - Test Case 3 | Result - Fail
+2020-08-24T17:39:10.39  - Time the Program was Executed - Test Case 1 | Result - Fail
+2020-08-24T17:39:10.542  - Time the Program was Executed - Test Case 2 | Result - Fail
+2020-08-24T17:39:10.548  - Time the Program was Executed - Test Case 3 | Result - Fail
+2020-08-24T17:39:55.387  - Time the Program was Executed - Test Case 1 | Result - Fail
+2020-08-24T17:39:55.535  - Time the Program was Executed - Test Case 2 | Result - Fail
+2020-08-24T17:39:55.541  - Time the Program was Executed - Test Case 3 | Result - Fail
+2020-08-24T17:43:59.049  - Time the Program was Executed - Test Case 1 | Result - Fail
+2020-08-24T17:43:59.224  - Time the Program was Executed - Test Case 2 | Result - Fail
+2020-08-24T17:43:59.231  - Time the Program was Executed - Test Case 3 | Result - Fail
+2020-08-24T17:45:08.732  - Time the Program was Executed - Test Case 1 | Result - Fail
+Output=[0 0 0 0 0; 0 0 1 0 0; 0 0 1 0 0; 0 0 1 0 0; 0 0 0 0 0]
+2020-08-24T17:45:09.124  - Time the Program was Executed - Test Case 2 | Result - Fail
+Output=[0 0 0 0 0 0; 0 0 0 1 0 0; 0 1 0 1 0 0; 0 0 1 1 0 0; 0 0 0 0 0 0]
+2020-08-24T17:45:09.13  - Time the Program was Executed - Test Case 3 | Result - Fail
+Output=[0 0 0 0 0 0; 0 1 1 0 0 0; 0 1 0 0 0 0; 0 0 0 0 1 0; 0 0 0 1 1 0; 0 0 0 0 0 0]
+2020-08-24T17:47:21.013  - Time the Program was Executed - Test Case 1 | Result - Pass
+Output=[0 0 0 0 0; 0 0 0 0 0; 0 1 1 1 0; 0 0 0 0 0; 0 0 0 0 0]
+2020-08-24T17:47:21.43  - Time the Program was Executed - Test Case 2 | Result - Pass
+Output=[0 1 0 0 0 1; 1 1 0 0 0 0; 1 0 0 0 0 0; 0 0 0 0 0 0; 0 0 0 0 0 0]
+2020-08-24T17:47:21.436  - Time the Program was Executed - Test Case 3 | Result - Pass
+Output=[0 0 0 0 0 0; 0 1 1 0 0 0; 0 1 1 0 0 0; 0 0 0 1 1 0; 0 0 0 1 1 0; 0 0 0 0 0 0]

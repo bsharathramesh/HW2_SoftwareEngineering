@@ -1,21 +1,21 @@
 # HW2 Software Engineering : Game of Life Implementation
-Homework2 Software Engineering
 
-Zenodo DOI Badge
+## Zenodo DOI Badge
 [![DOI](https://zenodo.org/badge/289782467.svg)](https://zenodo.org/badge/latestdoi/289782467)
 
-Team Members:
-Mangalnathan Vijayagopal (mvijaya2)
+## Team Members:
 
-Nischal Badarinath Kashyap (nkashya)
+#### Mangalnathan Vijayagopal (mvijaya2)
 
-Amogh Rameshappa Devapura (arames22)
+#### Nischal Badarinath Kashyap (nkashya)
 
-Niranjan Pandeshwar (nrpandes)
+#### Amogh Rameshappa Devapura (arames22)
 
-Sharath Bangalore Ramesh Kumar (sbangal2)
+#### Niranjan Pandeshwar (nrpandes)
 
-# Rules of the game:
+#### Sharath Bangalore Ramesh Kumar (sbangal2)
+
+## Rules of the game:
 
 1.) Any live cell with two or three live neighbours survives.
 
@@ -23,8 +23,10 @@ Sharath Bangalore Ramesh Kumar (sbangal2)
 
 3.) All other live cells die in the next generation. Similarly, all other dead cells stay dead.
 
+4.) Each edge considers its opposite edge as its neighbour.
 
-# Languages Used
+
+## Languages Used
 
 1.) Ruby
 
@@ -34,25 +36,123 @@ Sharath Bangalore Ramesh Kumar (sbangal2)
 
 3.) Julia
 
-# Pre requisites Required 
+## Data 
+Before starting with the debugging, please fill out the following form
 
-## Ruby
-1) Ruby execution Environment has to be setup
+https://docs.google.com/forms/d/e/1FAIpQLScrQhfX3kqmytBmOxWYL9FlraeTvPFnBz_PGsqDC4MauucAYQ/viewform?usp=sf_link
+
+## Pre requisites Required 
+
+1) Please reserve a VCL here https://vcl.ncsu.edu/scheduling/ (Build: Ubuntu 18.04 LTS Base)
+2) Install pip CLI using `sudo apt install python3-pip`
+3) Install GitHub CLI using `pip3 install gitpython`
+
+For each of the different programming languages follow the steps to install them in your machines:
+
+
+### Ruby
+1) Ruby execution Environment has to be setup by executing `sudo apt install ruby-full`
 2) Python3 execution Environment has to be setup
 3) Git Module has to imported/installed on the system
+4) Check for ruby version using the command `ruby --version`
+5) Check for python3 version using the command `python3 --version`
+6) Check for git version using the command `git --version`
 
-4) The bugs are introduced in the **game_of_life2** function.
+
+7) The bugs are introduced in the **game_of_life2** function.
 
 
-5) The developer has to find the bugs and debug them.
-6) Create an empty log file **log.txt** in the same directory where **execute.py** and **bug_fix_ruby.rb** is present if it does not exist.(Do this if the file is not present and you get error regarding this)
-7) There is no need to run the ruby file individually. The developer has to correct the program and run the python file **execute.py** using the command
+8) The developer has to find the bugs and debug them.
+9) Create an empty log file **log.txt** in the same directory where **execute.py** and **bug_fix_ruby.rb** is present if it does not exist.(Do this if the file is not present and you get error regarding this)
+10) There is no need to run the ruby file individually. The developer has to correct the program and run the python file **execute.py** using the command `python3 execute.py`
    
-   
-   $python3 execute.py
-8) In log.txt file in line number 8 where file_list is defined, please enter the **absolute path** of the address of log.txt file.
-9) There are three test cases introduced of which all have to be passed in order for the program to successfully compile.
-10) The base test case has to be passed in order further move on to Test Case 2 and Test Case 3
-11) The program may or may not contain syntax errors.
-12) Every time the program is executed, time will be logged on the log.txt file.
-13) The log.txt file is automatically updated on the github in the developer's branch each time the program is compiled.
+11) In log.txt file in line number 8 where file_list is defined, please enter the **absolute path** of the address of log.txt file.
+
+
+12) There are three test cases introduced of which all have to be passed in order for the program to successfully compile.
+13) The base test case has to be passed in order further move on to Test Case 2 and Test Case 3
+14) The program may or may not contain syntax errors.
+15) Every time the program is executed, time will be logged on the log.txt file.
+16) The log.txt file is automatically updated on the github in the developer's branch each time the program is compiled.
+
+### Swift
+1) Swift execution environment has to be set up as shown here https://medium.com/@gigmuster/install-swift-5-0-on-ubuntu-18-04-86f6b96654
+
+The steps for setup are as follows:
+
+a) `sudo apt-get install clang`
+
+b) `sudo apt-get install libcurl4 libpython2.7 libpython2.7-dev`
+
+c) `wget https://swift.org/builds/swift-5.0-release/ubuntu1804/swift-5.0-RELEASE/swift-5.0-RELEASE-ubuntu18.04.tar.gz`
+
+d) `tar xzf swift-5.0-RELEASE-ubuntu18.04.tar.gz`
+
+e) `sudo mv swift-5.0-RELEASE-ubuntu18.04 /usr/share/swift`
+
+f) `echo "export PATH=/usr/share/swift/usr/bin:$PATH" >> ~/.bashrc`
+
+g) `source  ~/.bashrc`
+
+Check for swift version using the command `swift --version`
+
+2) Git Module has to imported/installed on the system
+
+3) The developer has to find the bugs and debug them
+
+4) Swift program can be compiled by the command `swiftc -o <output_file_name> <swift_file>`
+
+5) Then, the compiled file can be executed by `./<output_file_name>`
+
+6) There are three test cases introduced of which all have to be passed in order for the program to successfully compile
+
+
+7) The base test case has to be passed in order further move on to Test Case 2 and Test Case 3
+
+
+8) The program may or may not contain syntax errors.
+
+
+9) Every time the program is executed, time will be logged on the log.txt file.
+
+
+10) The log.txt file is automatically updated on the github in the developer's branch each time the program is compiled.
+
+
+## Metric Evaluation of the Developers
+
+1) Every Developer's performance is analysed with respect to four major parameters
+
+2) The first parameter is with respect to the debugging time taken by the developer to complete the given task.
+
+3) Here the task is considered to be completed if all the three test cases provided are passed successfully.
+
+4) We request the developers to not run the program again if successfully completed.
+
+5) The second parameter would be the Number of times the developer has compiled the code. The lesser the better.
+
+6) The third parameter would be with respect to the responses given in the google forms
+
+7) The fourth major parameter would be the number of test cases passed. It is important that all test cases pass in order to get higher performance rating
+
+8) Please remember that this is solely for our analysis and should not be taken otherwise
+
+## Performance Formula
+
+**PF = 0.1(P+E) + 0.1(C+L) + (T*10)/((N/10)+(D/60))**
+where
+
+P -> No of Professional Experience in Years
+
+E -> No of Experience in the particular language in Years
+
+C -> Affinity towards Coding
+
+L -> Affinity towards Logical Thinking and Problem Solving
+
+T -> Number of Test Cases Passed
+
+N -> Number of times the program was compiled
+
+D -> Debugging time. If the task is failed, D = 30
+
