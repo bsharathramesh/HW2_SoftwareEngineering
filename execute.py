@@ -1,7 +1,7 @@
 from git import Repo
 import os
 os.system('ruby bug_fix_ruby.rb')
-repo_dir = ""
+repo_dir = "ls"
 repo = Repo(repo_dir,search_parent_directories=True)
 file_list = ['log.txt']
 commit_message = "Testing Scenarios Logs"
