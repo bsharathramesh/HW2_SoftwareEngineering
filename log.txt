@@ -1,1 +1,0 @@
-2020-08-23 20:50:20 -0400 - Time the Program was Executed - Test Case 3 | Result - Fail
