@@ -112,9 +112,9 @@ Check fot swift version using the command **swift --version**
 
 ## Metric Evaluation of the Developers
 
-1) Every Developer's performance is analysed with respect to three major parameters
+1) Every Developer's performance is analysed with respect to four major parameters
 
-2) The first major parameter is with respect to the debugging time taken by the developer to complete the given task.
+2) The first parameter is with respect to the debugging time taken by the developer to complete the given task.
 
 3) Here the task is considered to be completed if all the three test cases provided are passed successfully.
 
@@ -124,4 +124,6 @@ Check fot swift version using the command **swift --version**
 
 6) The third parameter would be with respect to the responses given in the google forms
 
-7) Please remember that this is solely for our analysis and should not be taken otherwise
+7) The fourth major parameter would be the number of test cases passed. It is important that all test cases pass in order to get higher performance rating
+
+8) Please remember that this is solely for our analysis and should not be taken otherwise
