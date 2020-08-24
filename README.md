@@ -128,7 +128,7 @@ Check fot swift version using the command **swift --version**
 
 8) Please remember that this is solely for our analysis and should not be taken otherwise
 
-## Performanve Formula
+## Performance Formula
 
 **PF = 0.1(P+E) + 0.1(C+L) + (T*10)/((N/10)+(D/60))**
 where
