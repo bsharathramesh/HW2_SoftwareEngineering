@@ -55,9 +55,7 @@ https://docs.google.com/forms/d/e/1FAIpQLScrQhfX3kqmytBmOxWYL9FlraeTvPFnBz_PGsqD
 
 8) The developer has to find the bugs and debug them.
 9) Create an empty log file **log.txt** in the same directory where **execute.py** and **bug_fix_ruby.rb** is present if it does not exist.(Do this if the file is not present and you get error regarding this)
-10) There is no need to run the ruby file individually. The developer has to correct the program and run the python file **execute.py** using the command
-
-$python3 execute.py
+10) There is no need to run the ruby file individually. The developer has to correct the program and run the python file **execute.py** using the command **$python3 execute.py**
    
 11) In log.txt file in line number 8 where file_list is defined, please enter the **absolute path** of the address of log.txt file.
 
