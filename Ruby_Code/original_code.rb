@@ -1,7 +1,7 @@
 #Conway's Game of Life
 #Implemented by Nischal Kashyap: nkashya
 #Simulate Game of Life for given number of Generations
-def game_of_life2(grid,generations)
+def game_of_life2(rows,columns,grid,generations)
     puts "#{grid}"
     temp2 = Marshal.dump(grid)
     temp = Marshal.load(temp2)
@@ -92,6 +92,8 @@ def game_of_life2(grid,generations)
                                 y = j+b
                             end
 
+                        #Edge Cases
+
                         #Top Edge
                         elsif i==0 and i+a<0
                             x = nx
@@ -104,8 +106,8 @@ def game_of_life2(grid,generations)
 
                         #Left Edge
                         elsif j==0 and j+b<0
-                            x = i
-                            y = ny-1
+                            x = i+a
+                            y = ny
 
                         #Right Edge
                         elsif j==ny and j+b>ny
@@ -117,12 +119,12 @@ def game_of_life2(grid,generations)
                             x = i+a
                             y = j+b
                         end
-                        alive_neighbours = alive_neighbours + temp[x][y] + temp[x-1][y-1]
+                        alive_neighbours = alive_neighbours + temp[x][y]
                     end
                 end
 
                 #Current cell to be subtracted to avoid duplicates
-                alive_neighbours = alive_neighbours- temp[i][j]-1
+                alive_neighbours = alive_neighbours- temp[i][j]
 
                 #Implenting rules of GOF
 
@@ -136,7 +138,7 @@ def game_of_life2(grid,generations)
 
                 #A new cell is born if there are 3 neighbors
                 elsif temp[i][j]==0 and alive_neighbours==3
-                    future[i][j] = 0
+                    future[i][j] = 1
                 end
             end
         end
@@ -160,6 +162,8 @@ end
 
 File.open("log.txt", "a") { |f| f.write "\n#{Time.now} - Time the Program was Started\n"}
 Test = 1
+rows = 3
+columns = 3
 
 input1 = [[0,0,0,0,0,0],[0,0,1,1,0,0],[0,1,0,0,1,0],[0,0,1,1,0,0], [0,0,0,0,0,0]]
 output1 = [[0,0,0,0,0,0],[0,0,1,1,0,0],[0,1,0,0,1,0],[0,0,1,1,0,0], [0,0,0,0,0,0]]
@@ -191,7 +195,7 @@ while Test < 4
        generations = generation3
    end
 
-    alpha = game_of_life2 grid,generations
+    alpha = game_of_life2 rows,columns,grid,generations
     if alpha == output
     result = "Test Case Number #{Test} has passed"
     else
@@ -201,9 +205,11 @@ while Test < 4
     end
     puts "#{result}"
 
-    File.open("log.txt", "a") { |f| f.write "#{Time.now} - Time the Program was Executed | Result - #{result}\n"}
+    File.open("log.txt", "a") { |f| f.write "#{Time.now} - Time the Program was Executed - Test Case #{Test} | Result - #{result}\n"}
     File.open("log.txt", "a") { |f| f.write "The output for the program is as follows \n #{output} \n"}
     Test += 1
+    rows += 1
+    columns += 1
 end
 
 if flag==1
