@@ -23,6 +23,8 @@
 
 3.) All other live cells die in the next generation. Similarly, all other dead cells stay dead.
 
+4.) Each edge considers its opposite edge as its neighbour.
+
 
 ## Languages Used
 
@@ -40,6 +42,13 @@ Before starting with the debugging, please fill out the following form
 https://docs.google.com/forms/d/e/1FAIpQLScrQhfX3kqmytBmOxWYL9FlraeTvPFnBz_PGsqDC4MauucAYQ/viewform?usp=sf_link
 
 ## Pre requisites Required 
+
+1) Please reserve a VCL here https://vcl.ncsu.edu/scheduling/ (Build: Ubuntu 18.04 LTS Base)
+2) Install pip CLI using `sudo apt install python3-pip`
+3) Install GitHub CLI using `pip3 install gitpython`
+
+For each of the different programming languages follow the steps to install them in your machines:
+
 
 ### Ruby
 1) Ruby execution Environment has to be setup by executing `sudo apt install ruby-full`
