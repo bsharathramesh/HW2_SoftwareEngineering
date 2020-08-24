@@ -34,12 +34,12 @@ Sharath Bangalore Ramesh Kumar (sbangal2)
 2) Python3 execution Environment has to be setup
 3) Git Module has to imported/installed on the system
 
--> The bugs are introduced in the bug_fix_ruby.rb especially in the function game_of_life2.
--> The developer has to find the bugs and debug them.
--> There is no need to run the ruby file individually. The developer has to correct the program and run the python file execute.py using python3.
+a) The bugs are introduced in the bug_fix_ruby.rb especially in the function game_of_life2.
+b) The developer has to find the bugs and debug them.
+c) There is no need to run the ruby file individually. The developer has to correct the program and run the python file execute.py using python3.
    $python3 execute.py
--> There are three test cases introduced of which all have to be passed in order for the program to successfully compile.
--> The base test case has to be passed in order further move on to Test Case 2 and Test Case 3
--> The program may or may not contain the syntax errors.
--> Every time the program is executed, time will be logged on the log.txt file.
--> The log.txt file is automatically updated on the github in the developers branch each time the program is compiled.
+d) There are three test cases introduced of which all have to be passed in order for the program to successfully compile.
+e) The base test case has to be passed in order further move on to Test Case 2 and Test Case 3
+f) The program may or may not contain the syntax errors.
+g) Every time the program is executed, time will be logged on the log.txt file.
+h) The log.txt file is automatically updated on the github in the developers branch each time the program is compiled.
