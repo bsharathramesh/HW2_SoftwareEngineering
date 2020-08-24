@@ -45,22 +45,26 @@ https://docs.google.com/forms/d/e/1FAIpQLScrQhfX3kqmytBmOxWYL9FlraeTvPFnBz_PGsqD
 1) Ruby execution Environment has to be setup
 2) Python3 execution Environment has to be setup
 3) Git Module has to imported/installed on the system
+4) Check fot swift version using the command **ruby --version**
+5) Check fot swift version using the command **python3 --version**
+6) Check fot swift version using the command **git --version**
 
-4) The bugs are introduced in the **game_of_life2** function.
+
+7) The bugs are introduced in the **game_of_life2** function.
 
 
-5) The developer has to find the bugs and debug them.
-6) Create an empty log file **log.txt** in the same directory where **execute.py** and **bug_fix_ruby.rb** is present if it does not exist.(Do this if the file is not present and you get error regarding this)
-7) There is no need to run the ruby file individually. The developer has to correct the program and run the python file **execute.py** using the command
+8) The developer has to find the bugs and debug them.
+9) Create an empty log file **log.txt** in the same directory where **execute.py** and **bug_fix_ruby.rb** is present if it does not exist.(Do this if the file is not present and you get error regarding this)
+10) There is no need to run the ruby file individually. The developer has to correct the program and run the python file **execute.py** using the command
    
    
    $python3 execute.py
-8) In log.txt file in line number 8 where file_list is defined, please enter the **absolute path** of the address of log.txt file.
-9) There are three test cases introduced of which all have to be passed in order for the program to successfully compile.
-10) The base test case has to be passed in order further move on to Test Case 2 and Test Case 3
-11) The program may or may not contain syntax errors.
-12) Every time the program is executed, time will be logged on the log.txt file.
-13) The log.txt file is automatically updated on the github in the developer's branch each time the program is compiled.
+11) In log.txt file in line number 8 where file_list is defined, please enter the **absolute path** of the address of log.txt file.
+12) There are three test cases introduced of which all have to be passed in order for the program to successfully compile.
+13) The base test case has to be passed in order further move on to Test Case 2 and Test Case 3
+14) The program may or may not contain syntax errors.
+15) Every time the program is executed, time will be logged on the log.txt file.
+16) The log.txt file is automatically updated on the github in the developer's branch each time the program is compiled.
 
 ## Swift
 1) Swift execution environment has to be set up as shown here https://medium.com/@gigmuster/install-swift-5-0-on-ubuntu-18-04-86f6b96654
