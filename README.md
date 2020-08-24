@@ -1,21 +1,21 @@
 # HW2 Software Engineering : Game of Life Implementation
 
-# Zenodo DOI Badge
+## Zenodo DOI Badge
 [![DOI](https://zenodo.org/badge/289782467.svg)](https://zenodo.org/badge/latestdoi/289782467)
 
-# Team Members:
+## Team Members:
 
-## Mangalnathan Vijayagopal (mvijaya2)
+### Mangalnathan Vijayagopal (mvijaya2)
 
-## Nischal Badarinath Kashyap (nkashya)
+### Nischal Badarinath Kashyap (nkashya)
 
-## Amogh Rameshappa Devapura (arames22)
+### Amogh Rameshappa Devapura (arames22)
 
-## Niranjan Pandeshwar (nrpandes)
+### Niranjan Pandeshwar (nrpandes)
 
-## Sharath Bangalore Ramesh Kumar (sbangal2)
+### Sharath Bangalore Ramesh Kumar (sbangal2)
 
-# Rules of the game:
+## Rules of the game:
 
 1.) Any live cell with two or three live neighbours survives.
 
@@ -24,7 +24,7 @@
 3.) All other live cells die in the next generation. Similarly, all other dead cells stay dead.
 
 
-# Languages Used
+## Languages Used
 
 1.) Ruby
 
@@ -34,14 +34,14 @@
 
 3.) Julia
 
-# Data 
+## Data 
 Before starting with the debugging, please fill out the following form
 
 https://docs.google.com/forms/d/e/1FAIpQLScrQhfX3kqmytBmOxWYL9FlraeTvPFnBz_PGsqDC4MauucAYQ/viewform?usp=sf_link
 
-# Pre requisites Required 
+## Pre requisites Required 
 
-## Ruby
+### Ruby
 1) Ruby execution Environment has to be setup
 2) Python3 execution Environment has to be setup
 3) Git Module has to imported/installed on the system
@@ -66,7 +66,7 @@ https://docs.google.com/forms/d/e/1FAIpQLScrQhfX3kqmytBmOxWYL9FlraeTvPFnBz_PGsqD
 15) Every time the program is executed, time will be logged on the log.txt file.
 16) The log.txt file is automatically updated on the github in the developer's branch each time the program is compiled.
 
-## Swift
+### Swift
 1) Swift execution environment has to be set up as shown here https://medium.com/@gigmuster/install-swift-5-0-on-ubuntu-18-04-86f6b96654
 
 The steps for setup are as follows:
