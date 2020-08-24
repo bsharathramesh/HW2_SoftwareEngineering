@@ -162,11 +162,11 @@ function game_of_life_test(grid)
                 end
                 
                 # Current cell to be subtracted to avoid duplicates
-                alive_neighbors-=temp[i,j]
+                alive_neighbors = alive_neighbors - temp[i,j] - 1
                 
                 # Lonely Cell dies
                 if temp[i,j]==1 && alive_neighbors<2
-                    future[i,j]=0
+                    future[i,j]=1
                 
                 # Cell dies due to overcrowding
                 elseif temp[i,j]==1 && alive_neighbors>3
@@ -174,12 +174,11 @@ function game_of_life_test(grid)
                 
                 # A new cell is born if there are 3 neighbors
                 elseif temp[i,j]==0 && alive_neighbors==3
-                    future[i,j]=1
+                    future[i,j]=0
                 
                 end
             end
         end
-        temp = deepcopy(future)
         output_test(r,c,future)
     end
     return future
@@ -197,7 +196,7 @@ function runtest(inp,out,num)
     if test_out == out
         open("log.txt","a") do io
             println(io,Dates.now(), "  - Time the Program was Executed - Test Case ",num," | Result - Pass")
-            println(io,"Output=",test_out)
+	    println(io,"Output=",test_out)
         end
     else
         open("log.txt","a") do io
