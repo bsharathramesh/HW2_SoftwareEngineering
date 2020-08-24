@@ -48,38 +48,38 @@ https://docs.google.com/forms/d/e/1FAIpQLScrQhfX3kqmytBmOxWYL9FlraeTvPFnBz_PGsqD
 
 ## Pre requisites Required 
 
-1) Please reserve a VCL here https://vcl.ncsu.edu/scheduling/ (Build: Ubuntu 18.04 LTS Base)
+1.) Please reserve a VCL here https://vcl.ncsu.edu/scheduling/ (Build: Ubuntu 18.04 LTS Base)
 
 
-2) Clone the specific branch for testing using the command `git clone --single-branch --branch <your_unity_ID> https://github.com/bsharathramesh/HW2_SE2020_Testing.git`
+2.) Clone the specific branch for testing using the command `git clone --single-branch --branch <your_unity_ID> https://github.com/bsharathramesh/HW2_SE2020_Testing.git`
 
 
-3) Pull the buggy code from the master branch using the command `git pull origin master`
+3.) Pull the buggy code from the master branch using the command `git pull origin master`
 
 
-3) Install pip CLI using `sudo apt install python3-pip`
+4.) Install pip CLI using `sudo apt install python3-pip`
 
 
-4) Install GitHub CLI using `pip3 install gitpython`
+5.) Install GitHub CLI using `pip3 install gitpython`
 
 
 For each of the different programming languages follow the steps to install them in your machines:
 
 ### Ruby
 
-1) Ruby execution Environment has to be setup by executing `sudo apt install ruby-full`
+1.) Ruby execution Environment has to be setup by executing `sudo apt install ruby-full`
 
 
-2) Check for ruby version using the command `ruby --version`
+2.) Check for ruby version using the command `ruby --version`
 
 
-3) The bugs are introduced in the **game_of_life2** function.
+3.) The bugs are introduced in the **game_of_life2** function.
 
 
-4) The developer has to find the bugs and debug them.
+4.) The developer has to find the bugs and debug them.
 
 
-5) Create an empty log file **log.txt** in the same directory where **execute.py** and **bug_fix_ruby.rb** is present if it does not exist.(Do this if the file is not present and you get error regarding this)
+5.) Create an empty log file **log.txt** in the same directory where **execute.py** and **bug_fix_ruby.rb** is present if it does not exist.(Do this if the file is not present and you get error regarding this)
 
 
 ### Swift
@@ -90,25 +90,25 @@ Swift execution environment has to be set up as shown here https://medium.com/@g
 The steps for setup are as follows:
 
 
-a) `sudo apt-get install clang`
+  a) `sudo apt-get install clang`
 
 
-b) `sudo apt-get install libcurl4 libpython2.7 libpython2.7-dev`
+  b) `sudo apt-get install libcurl4 libpython2.7 libpython2.7-dev`
 
 
-c) `wget https://swift.org/builds/swift-5.0-release/ubuntu1804/swift-5.0-RELEASE/swift-5.0-RELEASE-ubuntu18.04.tar.gz`
+  c) `wget https://swift.org/builds/swift-5.0-release/ubuntu1804/swift-5.0-RELEASE/swift-5.0-RELEASE-ubuntu18.04.tar.gz`
 
 
-d) `tar xzf swift-5.0-RELEASE-ubuntu18.04.tar.gz`
+  d) `tar xzf swift-5.0-RELEASE-ubuntu18.04.tar.gz`
 
 
-e) `sudo mv swift-5.0-RELEASE-ubuntu18.04 /usr/share/swift`
+  e) `sudo mv swift-5.0-RELEASE-ubuntu18.04 /usr/share/swift`
 
 
-f) `echo "export PATH=/usr/share/swift/usr/bin:$PATH" >> ~/.bashrc`
+  f) `echo "export PATH=/usr/share/swift/usr/bin:$PATH" >> ~/.bashrc`
 
 
-g) `source  ~/.bashrc`
+  g) `source  ~/.bashrc`
 
 
 Check for swift version using the command `swift --version`
@@ -116,84 +116,84 @@ Check for swift version using the command `swift --version`
 
 ### Julia
 
-1) Julia environment can be set up as shown here https://ferrolho.github.io/blog/2019-01-26/how-to-install-julia-on-ubuntu
+1.) Julia environment can be set up as shown here https://ferrolho.github.io/blog/2019-01-26/how-to-install-julia-on-ubuntu
 
 
-2) The steps to be followed are as shown below:
+2.) The steps to be followed are as shown below:
 
 
-a) `wget https://julialang-s3.julialang.org/bin/linux/x64/1.5/julia-1.5.0-linux-x86_64.tar.gz`
+  a) `wget https://julialang-s3.julialang.org/bin/linux/x64/1.5/julia-1.5.0-linux-x86_64.tar.gz`
 
 
-b) `tar -xvzf julia-1.5.0-linux-x86_64.tar.gz`
+  b) `tar -xvzf julia-1.5.0-linux-x86_64.tar.gz`
 
 
-c) `sudo cp -r julia-1.5.0 /opt/`
+  c) `sudo cp -r julia-1.5.0 /opt/`
 
 
-d) `sudo ln -s /opt/julia-1.5.0/bin/julia /usr/local/bin/julia`
+  d) `sudo ln -s /opt/julia-1.5.0/bin/julia /usr/local/bin/julia`
 
 
-e) `julia`
+  e) `julia`
 
 
-f) `import Pkg; Pkg.add("Distributions")`
+  f) `import Pkg; Pkg.add("Distributions")`
 
 
-g) `exit()`
+  g) `exit()`
 
 
 ### Post-installation
 
-1) The developer has to debug the program
+1.) The developer has to debug the program
 
 
-2) Update the path to the log file in the **execute.py** file
+2.) Update the path to the log file in the **execute.py** file
 
 
-3) The program can be executed using the **execute.py** file which automatically creates a lof file of the output and can be pushed to developer specific branches of the testing repo using the command `python3 execute.py`
+3.) The program can be executed using the **execute.py** file which automatically creates a lof file of the output and can be pushed to developer specific branches of the testing repo using the command `python3 execute.py`
 
 
-4) There are three test cases introduced of which all have to be passed in order for the program to successfully compile
+4.) There are three test cases introduced of which all have to be passed in order for the program to successfully compile
 
 
-5) The base test case has to be passed in order further move on to Test Case 2 and Test Case 3
+5.) The base test case has to be passed in order further move on to Test Case 2 and Test Case 3
 
 
-6) The program may or may not contain syntax errors
+6.) The program may or may not contain syntax errors
 
 
-7) Every time the program is executed, time will be logged on the log.txt file
+7.) Every time the program is executed, time will be logged on the log.txt file
 
 
-8) The log.txt file is automatically updated on the github in the developer's branch each time the program is compiled
+8.) The log.txt file is automatically updated on the github in the developer's branch each time the program is compiled
 
 
 
 ## Metric Evaluation of the Developers
 
-1) Every Developer's performance is analysed with respect to four major parameters
+1.) Every Developer's performance is analysed with respect to four major parameters
 
 
-2) The first parameter is with respect to the debugging time taken by the developer to complete the given task
+2.) The first parameter is with respect to the debugging time taken by the developer to complete the given task
 
 
-3) Here the task is considered to be completed if all the three test cases provided are passed successfully
+3.) Here the task is considered to be completed if all the three test cases provided are passed successfully
 
 
-4) We request the developers to not run the program again if successfully completed
+4.) We request the developers to not run the program again if successfully completed
 
 
-5) The second parameter would be the Number of times the developer has compiled the code. The lesser the better
+5.) The second parameter would be the Number of times the developer has compiled the code. The lesser the better
 
 
-6) The third parameter would be with respect to the responses given in the google forms
+6.) The third parameter would be with respect to the responses given in the google forms
 
 
-7) The fourth major parameter would be the number of test cases passed. It is important that all test cases pass in order to get higher performance rating
+7.) The fourth major parameter would be the number of test cases passed. It is important that all test cases pass in order to get higher performance rating
 
 
-8) Please remember that this is solely for our analysis and should not be taken otherwise
+8.) Please remember that this is solely for our analysis and should not be taken otherwise
 
 
 ## Performance Formula
