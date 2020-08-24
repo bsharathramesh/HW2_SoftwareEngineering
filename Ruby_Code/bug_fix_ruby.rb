@@ -163,7 +163,7 @@ def game_of_life2(rows,columns,grid,generations)
     return future
 end
 
-
+File.open("log.txt", "a") { |f| f.write "\n#{Time.now} - Time the Program was Started\n"}
 Test = 1
 rows = 3
 columns = 3
@@ -197,46 +197,8 @@ while Test < 4
        output = output3
        generations = generation3
    end
-    #Assign Randomly to Grid
-    #grid = Array.new(rows){Array.new(columns)}
-    #grid = [[0,0,0,0,0],[0,0,0,0,0], [0,1,1,1,0], [0,0,0,0,0], [0,0,0,0,0] ]
-#     for i in 0..rows-1
-#         for j in 0..columns-1
-#             value = rand()<population_percentage
-#             if value
-#                 grid[i][j] = 0
-#             else
-#                 grid[i][j] = 1
-#             end
-#         end
-#     end
-
-    #Alternate Assignment in grid ( For Testing )
-
-    # element = 1
-    # grid = Array.new(rows){Array.new(columns)}
-    # for i in 0..rows-1
-    #     for j in 0..columns-1
-    #         grid[i][j] = element
-    #         element = 1-element
-    #     end
-    # end
-
-    #Display Initial Grid
-#     for i in 0..rows-1
-#         for j in 0..columns-1
-#             if grid[i][j]==1
-#                 print "@ "
-#             else
-#                 print ". "
-#             end
-#         end
-#         puts ""
-#     end
-
 
     alpha = game_of_life2 rows,columns,grid,generations
-    puts "Output is #{alpha}"
     if alpha == output
     result = "Test Case Number #{Test} has passed"
     else
@@ -247,11 +209,12 @@ while Test < 4
     puts "#{result}"
 
     File.open("log.txt", "a") { |f| f.write "#{Time.now} - Time the Program was Executed - Test Case #{Test} | Result - #{result}\n"}
+    File.open("log.txt", "a") { |f| f.write "The output for the program is as follows \n #{output} \n"}
     Test += 1
     rows += 1
     columns += 1
 end
 
 if flag==1
-puts "All the test cases have passed!! The program has been successfully Debugged!!"
+puts "\nAll the test cases have passed!! The program has been successfully Debugged!!\n"
 end
