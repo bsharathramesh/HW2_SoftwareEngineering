@@ -34,6 +34,10 @@ Sharath Bangalore Ramesh Kumar (sbangal2)
 
 3.) Julia
 
+# Data 
+Before starting with the debugging, please fill out the following form
+https://docs.google.com/forms/d/1ZmWd6z7G7dXvX7z-hOPC6GxdwYqVANRQCKkzfN4BO8c/edit
+
 # Pre requisites Required 
 
 ## Ruby
