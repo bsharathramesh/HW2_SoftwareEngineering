@@ -48,7 +48,7 @@ https://docs.google.com/forms/d/e/1FAIpQLScrQhfX3kqmytBmOxWYL9FlraeTvPFnBz_PGsqD
 
 ## Pre requisites Required 
 
-1.) Please reserve a VCL here https://vcl.ncsu.edu/scheduling/ (Build: Ubuntu 18.04 LTS Base)
+1.) Please reserve a VCL here https://vcl.ncsu.edu/scheduling/ (Build: Ubuntu 18.04 LTS Base) or a MAC OS
 
 
 2.) Clone the specific branch for testing using the command `git clone --single-branch --branch <your_unity_ID> https://github.com/bsharathramesh/HW2_SE2020_Testing.git`
@@ -67,7 +67,7 @@ For each of the different programming languages follow the steps to install them
 
 ### Ruby
 
-1.) Ruby execution Environment has to be setup by executing `sudo apt install ruby-full`
+1.) Ruby execution Environment has to be setup by executing `sudo apt install ruby-full`. To install ruby on Mac use the command - brew install ruby
 
 
 2.) Check for ruby version using the command `ruby --version`
