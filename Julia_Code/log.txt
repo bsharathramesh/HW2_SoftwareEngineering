@@ -37,15 +37,11 @@ Output=[0 0 0 0 0; 0 0 0 0 0; 0 1 1 1 0; 0 0 0 0 0; 0 0 0 0 0]
 Output=[0 1 0 0 0 1; 1 1 0 0 0 0; 1 0 0 0 0 0; 0 0 0 0 0 0; 0 0 0 0 0 0]
 2020-08-24T17:47:21.436  - Time the Program was Executed - Test Case 3 | Result - Pass
 Output=[0 0 0 0 0 0; 0 1 1 0 0 0; 0 1 1 0 0 0; 0 0 0 1 1 0; 0 0 0 1 1 0; 0 0 0 0 0 0]
-2020-08-24T18:11:40.898  - Time the Program was Executed - Test Case 1 | Result - Pass
-Output=[0 0 0 0 0; 0 0 0 0 0; 0 1 1 1 0; 0 0 0 0 0; 0 0 0 0 0]
-2020-08-24T18:11:41.268  - Time the Program was Executed - Test Case 2 | Result - Pass
-Output=[0 1 0 0 0 1; 1 1 0 0 0 0; 1 0 0 0 0 0; 0 0 0 0 0 0; 0 0 0 0 0 0]
-2020-08-24T18:11:41.273  - Time the Program was Executed - Test Case 3 | Result - Pass
-Output=[0 0 0 0 0 0; 0 1 1 0 0 0; 0 1 1 0 0 0; 0 0 0 1 1 0; 0 0 0 1 1 0; 0 0 0 0 0 0]
-2020-08-24T18:12:58.549  - Time the Program was Executed - Test Case 1 | Result - Fail
+2020-08-24T22:27:27.527  - Time the Program was Executed - Test Case 1 | Result - Fail
 Output=[0 0 0 0 0; 0 0 1 0 0; 0 0 1 0 0; 0 0 1 0 0; 0 0 0 0 0]
-2020-08-24T18:12:58.998  - Time the Program was Executed - Test Case 2 | Result - Fail
-Output=[0 0 0 0 0 0; 0 0 0 1 0 0; 0 1 0 1 0 0; 0 0 1 1 0 0; 0 0 0 0 0 0]
-2020-08-24T18:12:59.004  - Time the Program was Executed - Test Case 3 | Result - Fail
-Output=[0 0 0 0 0 0; 0 1 1 0 0 0; 0 1 0 0 0 0; 0 0 0 0 1 0; 0 0 0 1 1 0; 0 0 0 0 0 0]
+2020-08-24T22:28:43.007  - Time the Program was Executed - Test Case 1 | Result - Pass
+Output=[0 0 0 0 0; 0 0 0 0 0; 0 1 1 1 0; 0 0 0 0 0; 0 0 0 0 0]
+2020-08-24T22:28:43.281  - Time the Program was Executed - Test Case 2 | Result - Pass
+Output=[0 1 0 0 0 1; 1 1 0 0 0 0; 1 0 0 0 0 0; 0 0 0 0 0 0; 0 0 0 0 0 0]
+2020-08-24T22:28:43.441  - Time the Program was Executed - Test Case 3 | Result - Pass
+Output=[0 0 0 0 0 0; 0 1 1 0 0 0; 0 1 1 0 0 0; 0 0 0 1 1 0; 0 0 0 1 1 0; 0 0 0 0 0 0]
