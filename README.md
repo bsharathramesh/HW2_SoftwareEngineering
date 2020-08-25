@@ -65,6 +65,36 @@ https://docs.google.com/forms/d/e/1FAIpQLScrQhfX3kqmytBmOxWYL9FlraeTvPFnBz_PGsqD
 
 For each of the different programming languages follow the steps to install them in your machines:
 
+
+### Post-installation
+
+1.) The developer has to debug the program
+
+
+2.) Update the path to the "log.txt" file in the **execute.py** file
+
+
+3.) The program can be executed using the **execute.py** file which automatically creates a log file of the output and can be pushed to developer specific branches of the testing repo using the command `python3 execute.py`
+
+
+4.) There are three test cases introduced of which all have to be passed in order for the program to successfully compile
+
+
+5.) The base test case has to be passed in order further move on to Test Case 2 and Test Case 3
+
+
+6.) The program may or may not contain syntax errors
+
+
+7.) Every time the program is executed, time will be logged on the log.txt file
+
+
+8.) The log.txt file is automatically updated on the github in the developer's branch each time the program is compiled
+
+
+
+
+
 ### Ruby
 
 1.) Ruby execution Environment has to be setup by executing `sudo apt install ruby-full`. To install ruby on Mac use the command - brew install ruby
@@ -140,34 +170,6 @@ Check for swift version using the command `swift --version`
 
 
 -> `exit()`
-
-
-### Post-installation
-
-1.) The developer has to debug the program
-
-
-2.) Update the path to the log file in the **execute.py** file
-
-
-3.) The program can be executed using the **execute.py** file which automatically creates a log file of the output and can be pushed to developer specific branches of the testing repo using the command `python3 execute.py`
-
-
-4.) There are three test cases introduced of which all have to be passed in order for the program to successfully compile
-
-
-5.) The base test case has to be passed in order further move on to Test Case 2 and Test Case 3
-
-
-6.) The program may or may not contain syntax errors
-
-
-7.) Every time the program is executed, time will be logged on the log.txt file
-
-
-8.) The log.txt file is automatically updated on the github in the developer's branch each time the program is compiled
-
-
 
 ## Metric Evaluation of the Developers
 
