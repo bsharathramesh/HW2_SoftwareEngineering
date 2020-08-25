@@ -1,6 +1,6 @@
-# Contributing to SENG20-G19
+# Contributing to HW2_SoftwareEngineering
 
-These are the set of guidelines of how the users can contribute to SENG20-G19!
+These are the set of guidelines of how the users can contribute to HW2_SoftwareEngineering!
 
 ## Code of Conduct
 
@@ -16,7 +16,7 @@ Prerequistes required before starting this project
  
 ### Reporting Bugs
 
-This section guides you through submitting a bug report for SENG20-G19. 
+This section guides you through submitting a bug report for HW2_SoftwareEngineering. 
 Following these guidelines helps maintainers and the community understand your report, reproduce the behavior and find related reports.
 
 Before Submitting A Bug Report
