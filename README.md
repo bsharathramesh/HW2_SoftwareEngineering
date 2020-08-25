@@ -150,7 +150,7 @@ Check for swift version using the command `swift --version`
 2.) Update the path to the log file in the **execute.py** file
 
 
-3.) The program can be executed using the **execute.py** file which automatically creates a lof file of the output and can be pushed to developer specific branches of the testing repo using the command `python3 execute.py`
+3.) The program can be executed using the **execute.py** file which automatically creates a log file of the output and can be pushed to developer specific branches of the testing repo using the command `python3 execute.py`
 
 
 4.) There are three test cases introduced of which all have to be passed in order for the program to successfully compile
