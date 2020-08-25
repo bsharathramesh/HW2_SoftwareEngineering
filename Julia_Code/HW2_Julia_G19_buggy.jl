@@ -198,11 +198,13 @@ function runtest(inp,out,num)
             println(io,Dates.now(), "  - Time the Program was Executed - Test Case ",num," | Result - Pass")
 	    println(io,"Output=",test_out)
         end
+        return 1
     else
         open("log.txt","a") do io
             println(io,Dates.now(), "  - Time the Program was Executed - Test Case ",num," | Result - Fail")
             println(io,"Output=",test_out)
         end
+        return 0
     end
 end
 
@@ -218,9 +220,17 @@ Output1 = [0 0 0 0 0; 0 0 0 0 0; 0 1 1 1 0; 0 0 0 0 0; 0 0 0 0 0]
 Output2 = [0 1 0 0 0 1; 1 1 0 0 0 0; 1 0 0 0 0 0; 0 0 0 0 0 0; 0 0 0 0 0 0]
 Output3 = [0 0 0 0 0 0; 0 1 1 0 0 0; 0 1 1 0 0 0; 0 0 0 1 1 0; 0 0 0 1 1 0; 0 0 0 0 0 0]
 
-runtest(Input1, Output1,1)
-runtest(Input2, Output2,2)
-runtest(Input3, Output3,3)
+Test1 = runtest(Input1, Output1,1)
+if Test1 == 0
+    println("Test Case 1 Failed. Aborting.....")
+else
+    Test2 = runtest(Input2, Output2,2)
+    if Test2 == 0
+        println("Test Case 2 Failed. Aborting.....")
+    else
+        Test3 = runtest(Input3, Output3,3)
+    end
+end
 
 
 
