@@ -158,7 +158,7 @@ func gameOfLife(grid: [[Int]], generations: Int) -> [[Int]]
         }
 
         // Current cell to be subtracted to avoid duplicates
-        aliveNeighbors = aliveNeighbors - temp[i][j] - 1  //*
+        aliveNeighbors = aliveNeighbors - temp[i][j] - 1
 
         //Implenting rules of GOF
         
@@ -172,11 +172,11 @@ func gameOfLife(grid: [[Int]], generations: Int) -> [[Int]]
         }
         // A new cell is born if there are 3 neighbors
         else if ((temp[i][j]==0) && (aliveNeighbors == 3)){
-          future[i][j] = 0 //*
+          future[i][j] = 0
         }
       }
     }
-	//*
+    
   }
   return future
 }
