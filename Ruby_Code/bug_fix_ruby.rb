@@ -104,39 +104,35 @@ def game_of_life2(grid,generations)
 
                         #Left Edge
                         elsif j==0 and j+b<0
-                            x = i
-                            y = ny-1
+                            x = i+a
+                            y = ny
 
                         #Right Edge
                         elsif j==ny and j+b>ny
                             x = i+a
-                            y = 0
+                            y = j
 
                         #Internal life
                         else
-                            x = i+a
+                            x = i
                             y = j+b
                         end
-                        alive_neighbours = alive_neighbours + temp[x][y] + temp[x-1][y-1]
+                        alive_neighbours = alive_neighbours + temp[x][y]
                     end
                 end
 
                 #Current cell to be subtracted to avoid duplicates
-                alive_neighbours = alive_neighbours- temp[i][j]-1
+                alive_neighbours = alive_neighbours- temp[i][j]
 
-                #Implenting rules of GOF
 
-                #Lonely Cell dies
-                if temp[i][j]==1 and alive_neighbours<2
+                if temp[i][j]==1 and alive_neighbours<=2
                     future[i][j] = 0
 
-                #Cell dies due to overcrowding
-                elsif temp[i][j]==1 and alive_neighbours>3
+                elsif temp[i][j]==0 and alive_neighbours>3
                     future[i][j] = 0
 
-                #A new cell is born if there are 3 neighbors
-                elsif temp[i][j]==0 and alive_neighbours==3
-                    future[i][j] = 0
+                elsif temp[i][j]==0
+                    future[i][j] = 1
                 end
             end
         end
