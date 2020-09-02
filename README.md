@@ -220,3 +220,22 @@ D -> Debugging time. If the task is failed, D = 30
 
 https://github.com/bsharathramesh/HW2_SE2020_Testing
 
+## METHODS USED FOR TESTING.
+
+1.) We used following github repository for testing: https://github.com/bsharathramesh/HW2_SE2020_Testing
+
+2.) Each individual testers were assigned with different github branches.
+
+3.) Game of Life was coded in three different languages (ruby, Swift, Julia) and different bugs was introduced in each code.
+
+4.) Each individual testers were given 30 mins to debug the code and get the expected outputs. 
+
+5.) Initial setup required to run the test were mentioned in the README.md file and the test was performed in VCL machines or MAC laptops. 
+
+6.) Each programming language code had three testcases. And the task for a particular code is consider successful when the tester is able to debug and all three testcases are passed. 
+
+7.) To calculate the time taken by each tester to debug: End Time (Time when all three testcases passed) - start time ( time when the program was first compiled). This log is logged for each programming language and each tester will have their own log files. The log file is automatically checked into the testers github branch when the program is executed.
+
+8.) Each tester were given option to start with any programming language and were given 30 mins to debug three programming language.
+
+
