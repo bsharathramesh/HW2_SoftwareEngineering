@@ -220,25 +220,25 @@ D -> Debugging time. If the task is failed, D = 30
 
 https://github.com/bsharathramesh/HW2_SE2020_Testing
 
-## METHODS USED FOR TESTING.
+## Methods for Testing
 
-1.) We used following github repository for testing: https://github.com/bsharathramesh/HW2_SE2020_Testing
+- We used following github repository for testing: https://github.com/bsharathramesh/HW2_SE2020_Testing
 
-2.) Each individual testers were assigned with different github branches.
+- Each individual testers were assigned with different github branches.
 
-3.) Game of Life was coded in three different languages (ruby, Swift, Julia) and different bugs was introduced in each code.
+- Game of Life was coded in three different languages (ruby, Swift, Julia) and different bugs was introduced in each code.
 
-4.) Each individual testers were given 30 mins to debug the code and get the expected outputs. 
+- Each individual testers were given 30 mins to debug the code and get the expected outputs. 
 
-5.) Initial setup required to run the test were mentioned in the README.md file and the test was performed in VCL machines or MAC laptops. 
+- Initial setup required to run the test were mentioned in the README.md file and the test was performed in VCL machines or MAC laptops. 
 
-6.) Each programming language code had three testcases. And the task for a particular code is consider successful when the tester is able to debug and all three testcases are passed. 
+- Each programming language code had three testcases. And the task for a particular code is consider successful when the tester is able to debug and all three testcases are passed. 
 
-7.) To calculate the time taken by each tester to debug: End Time (Time when all three testcases passed) - start time ( time when the program was first compiled). This log is logged for each programming language and each tester will have their own log files. The log file is automatically checked into the testers github branch when the program is executed.
+- To calculate the time taken by each tester to debug: End Time (Time when all three testcases passed) - start time ( time when the program was first compiled). This log is logged for each programming language and each tester will have their own log files. The log file is automatically checked into the testers github branch when the program is executed.
 
-8.) Each tester were given option to start with any programming language and were given 30 mins to debug three programming language.
+- Each tester were given option to start with any programming language and were given 30 mins to debug three programming language.
 
-9.) Formula used for calculating the performance of each testers: 
+- Formula used for calculating the performance of each testers: 
 
 **PF = 0.1(P+E) + 0.1(C+L) + (T*10)/((N/10)+(D/60))**
 where
@@ -279,6 +279,23 @@ D -> Debugging time. If the task is failed, D = 30
 - On an average it was seen that at every 1.5 mins, a compilation was done in the program which showed that testers were keen on getting the solution rather than solving the problem.
 
 - We also had some outliers, who solved the problem with lesser code compilations.
+
+### Pie Chart Observation
+
+![Screen Shot 2020-09-02 at 12 05 07 AM](https://user-images.githubusercontent.com/55364746/91931088-7cc66f00-ecb0-11ea-8c70-097be9425b9e.png)
+
+![Screen Shot 2020-09-02 at 12 05 52 AM](https://user-images.githubusercontent.com/55364746/91931091-7f28c900-ecb0-11ea-8d99-588f83fdd77b.png)
+
+![Screen Shot 2020-09-02 at 12 06 15 AM](https://user-images.githubusercontent.com/55364746/91931097-818b2300-ecb0-11ea-9d16-8c69adaba214.png)
+
+![Screen Shot 2020-09-02 at 12 06 39 AM](https://user-images.githubusercontent.com/55364746/91931105-87810400-ecb0-11ea-869c-69ad7cbe01c9.png)
+
+![Screen Shot 2020-09-02 at 12 07 00 AM](https://user-images.githubusercontent.com/55364746/91931115-8cde4e80-ecb0-11ea-81de-b592d145b273.png)
+
+![Screen Shot 2020-09-02 at 12 07 24 AM](https://user-images.githubusercontent.com/55364746/91931121-91a30280-ecb0-11ea-95fc-f33c55dbbfa0.png)
+
+![Screen Shot 2020-09-02 at 12 07 54 AM](https://user-images.githubusercontent.com/55364746/91931128-95368980-ecb0-11ea-9a79-031edac5c761.png)
+
 
 
 ## Conclusion
