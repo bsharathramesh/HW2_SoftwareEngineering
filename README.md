@@ -238,4 +238,23 @@ https://github.com/bsharathramesh/HW2_SE2020_Testing
 
 8.) Each tester were given option to start with any programming language and were given 30 mins to debug three programming language.
 
+9.) Formula used for calculating the performance of each testers: 
+
+**PF = 0.1(P+E) + 0.1(C+L) + (T*10)/((N/10)+(D/60))**
+where
+
+P -> No of Professional Experience in Years
+
+E -> No of Experience in the particular language in Years
+
+C -> Affinity towards Coding
+
+L -> Affinity towards Logical Thinking and Problem Solving
+
+T -> Number of Test Cases Passed
+
+N -> Number of times the program was compiled
+
+D -> Debugging time. If the task is failed, D = 30
+
 
