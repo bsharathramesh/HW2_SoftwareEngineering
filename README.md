@@ -259,32 +259,32 @@ D -> Debugging time. If the task is failed, D = 30
 
 ## Materials Used for Testing
 
-Game of Life was implemented in Julia, Ruby and Swift. Ten testers opted to debug the three bugs in each language implemented. A VCL had to be provisioned by the testers to carry out the debugging process. 
+- Game of Life was implemented in Julia, Ruby and Swift. Ten testers opted to debug the three bugs in each language implemented. A VCL had to be provisioned by the testers to carry out the debugging process. 
 
-Julia, Swift and Ruby was installed using the steps provided in the README file. Each time the testers executed the program, the log file to record each time the program was executed and the number of test cases passed or failed was pushed to their respective branches on Github. 
+- Julia, Swift and Ruby was installed using the steps provided in the README file. Each time the testers executed the program, the log file to record each time the program was executed and the number of test cases passed or failed was pushed to their respective branches on Github. 
 
-All testers were asked to fill a questionnaire regarding their professional expertise and knowledge in the above programming languages to ascertain how comfortable they are in debugging the code and if it significantly affected the amount of time it took for them to debug the bugs.
+- All testers were asked to fill a questionnaire regarding their professional expertise and knowledge in the above programming languages to ascertain how comfortable they are in debugging the code and if it significantly affected the amount of time it took for them to debug the bugs.
 
 ## Observations
-1.) Most testers were not familiar with Julia, Ruby and Swift.
+- Most testers were not familiar with Julia, Ruby and Swift.
 
-2.) Testers preferred to debug Ruby code first followed by Julia and Swift.
+- Testers preferred to debug Ruby code first followed by Julia and Swift.
 
-3.) It was observed that the testers who had more affinity towards coding and logical thinking were able to solve the given problem much faster than the inexperienced.
+- It was observed that the testers who had more affinity towards coding and logical thinking were able to solve the given problem much faster than the inexperienced.
 
-4.) It was also observed that professional experience didn’t contribute much to the efficiency of solving the problem.
+- It was also observed that professional experience didn’t contribute much to the efficiency of solving the problem.
 
-5.) They could solve the problem with an average of 10% faster accuracy.
+- They could solve the problem with an average of 10% faster accuracy.
 
-6.) On an average it was seen that at every 1.5 mins, a compilation was done in the program which showed that testers were keen on getting the solution rather than solving the problem.
+- On an average it was seen that at every 1.5 mins, a compilation was done in the program which showed that testers were keen on getting the solution rather than solving the problem.
 
-7.) We also had some outliers, who solved the problem with lesser code compilations.
+- We also had some outliers, who solved the problem with lesser code compilations.
 
 
 ## Conclusion
-1.) The testers tend to take less time to debug the second and the third language than the first.
+- The testers tend to take less time to debug the second and the third language than the first.
 
-2.) It was seen that testers with math solving and logical thinking capability had a better advantage than the others.
+- It was seen that testers with math solving and logical thinking capability had a better advantage than the others.
 
 ## Threats to Validity
 
