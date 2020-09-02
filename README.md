@@ -257,4 +257,7 @@ N -> Number of times the program was compiled
 
 D -> Debugging time. If the task is failed, D = 30
 
+## MATERIALS USED FOR TESTING
+
+Game of Life was implemented in Julia, Ruby and Swift. Ten testers opted to debug the three bugs in each language implemented. A VCL had to be provisioned by the testers to carry out the debugging process. Julia, Swift and Ruby was installed using the steps provided in the README file. Each time the testers executed the program, the log file to record each time the program was executed and the number of test cases passed or failed was pushed to their respective branches on Github. All testers were asked to fill a questionnaire regarding their professional expertise and knowledge in the above programming languages to ascertain how comfortable they are in debugging the code and if it significantly affected the amount of time it took for them to debug the bugs.
 
